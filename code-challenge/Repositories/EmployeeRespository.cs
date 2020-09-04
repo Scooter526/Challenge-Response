@@ -29,14 +29,25 @@ namespace challenge.Repositories
 
         public Employee GetById(string id)
         {
-            return _employeeContext.Employees.SingleOrDefault(e => e.EmployeeId == id);
+             return _employeeContext.Employees.SingleOrDefault(e => e.EmployeeId == id);
+            /* foreach(Employee employee in _employeeContext.Employees)
+            {
+                if(employee.DirectReports != null){
+                    Console.Out.WriteLine("Employee: " + employee.EmployeeId + " has " + employee.DirectReports.Count + " direct reports");
+
+                    if(employee.EmployeeId.Equals(id))
+                    {
+                        return(employee);
+                    }
+                }
+                else{
+                    Console.Out.WriteLine(employee.EmployeeId + " " + "**** NO DIRECT REPORTS ****");
+                }
+            } 
+
+            return(null);  */
         }
 
-        public int SumDirectReports(string id)
-        {
-            return 1234;
-            //return _employeeContext.Employees.SingleOrDefault(e => e.EmployeeId == id);
-        }
 
         public Task SaveAsync()
         {

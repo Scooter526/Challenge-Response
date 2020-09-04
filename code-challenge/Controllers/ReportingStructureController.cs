@@ -15,24 +15,24 @@ namespace challenge.Controllers
         private readonly ILogger _logger;
         private readonly IReportingStructureService _reportingStructureService;
 
-        public ReportingStructureController(ILogger<ReportingStructureController> logger, IReportingStructureService ReportingStructureService)
+        public ReportingStructureController(ILogger<ReportingStructureController> logger, IReportingStructureService reportingStructureService)
         {
             _logger = logger;
-            _reportingStructureService = ReportingStructureService;
+            _reportingStructureService = reportingStructureService;
         }
 
 
-        [HttpGet("{id}", Name = "getEmployeeById")]
-        public IActionResult GetEmployeeById(String id)
+        [HttpGet("{id}", Name = "getReportingStructureById")]
+        public IActionResult GetReportingStructureById(String id)
         {
-            _logger.LogDebug($"Received employee get request for '{id}'");
+            _logger.LogDebug($"Received ReportingStructure get request for '{id}'");
 
-            var employee = _reportingStructureService.GetById(id);
+            var reportingStructure = _reportingStructureService.GetById(id);
 
-            if (employee == null)
+            if (reportingStructure == null)
                 return NotFound();
 
-            return Ok(employee);
-        } 
-    }       
+            return Ok(reportingStructure);
+        }
+    }
 }

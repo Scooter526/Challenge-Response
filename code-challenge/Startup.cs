@@ -27,9 +27,6 @@ namespace code_challenge
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-         //  
-         //  create Employee database for in memory use only   
-         //         
             services.AddDbContext<EmployeeContext>(options =>
             {
                 options.UseInMemoryDatabase("EmployeeDB");
@@ -37,20 +34,8 @@ namespace code_challenge
             services.AddScoped<IEmployeeRepository,EmployeeRespository>();
             services.AddTransient<EmployeeDataSeeder>();
             services.AddScoped<IEmployeeService, EmployeeService>();
+            services.AddScoped<IReportingStructureService, ReportingStructureService>();
             services.AddMvc();
-         //
-         //  Create Compensation database for in memory use only
-         //
-            services.AddDbContext<EmployeeContext>(options =>
-            {
-                options.UseInMemoryDatabase("CompensationDB");
-            });
-            services.AddScoped<ICompensationRepository,CompensationRespository>();
-            services.AddTransient<CompensationDataSeeder>();
-            services.AddScoped<ICompensationService, CompensationService>();
-            services.AddMvc();
-
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

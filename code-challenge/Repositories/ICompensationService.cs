@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace challenge.Services
 {
-    public interface IReportingStructureService
+    public interface ICompensationService
     {
-        ReportingStructure GetById(String id);
+        Compensation GetById(String id);
+
     }
 }

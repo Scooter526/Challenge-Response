@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge.Tests\\code-challenge.Tests.Integration.csproj": {}
+    "c:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge.Tests\\code-challenge.Tests.Integration.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge.Tests\\code-challenge.Tests.Integration.csproj": {
+    "c:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge.Tests\\code-challenge.Tests.Integration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge.Tests\\code-challenge.Tests.Integration.csproj",
+        "projectUniqueName": "c:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge.Tests\\code-challenge.Tests.Integration.csproj",
         "projectName": "code-challenge.Tests.Integration",
-        "projectPath": "C:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge.Tests\\code-challenge.Tests.Integration.csproj",
+        "projectPath": "c:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge.Tests\\code-challenge.Tests.Integration.csproj",
         "packagesPath": "C:\\Users\\Scott\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge.Tests\\obj\\",
+        "outputPath": "c:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Scott\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge\\code-challenge.csproj": {
-                "projectPath": "C:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge\\code-challenge.csproj"
+              "c:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge\\code-challenge.csproj": {
+                "projectPath": "c:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge\\code-challenge.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge\\code-challenge.csproj": {
+    "c:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge\\code-challenge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge\\code-challenge.csproj",
+        "projectUniqueName": "c:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge\\code-challenge.csproj",
         "projectName": "code-challenge",
-        "projectPath": "C:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge\\code-challenge.csproj",
+        "projectPath": "c:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge\\code-challenge.csproj",
         "packagesPath": "C:\\Users\\Scott\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge\\obj\\",
+        "outputPath": "c:\\Users\\Scott\\Desktop\\Mindex Code\\sr-code-challenge-dotnet\\code-challenge\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Scott\\AppData\\Roaming\\NuGet\\NuGet.Config",

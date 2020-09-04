@@ -19,6 +19,13 @@ namespace challenge.Repositories
             _CompensationContext = CompensationContext;
             _logger = logger;
         }
+
+        public Employee Add(Employee employee)
+        {
+            //employee.EmployeeId = Guid.NewGuid().ToString();
+            //_employeeContext.Employees.Add(employee);
+            return employee;
+        }
         public Compensation GetById(string id)
         {
             return _CompensationContext.TotalCompensation.SingleOrDefault(e => e.EmployeeId == id);

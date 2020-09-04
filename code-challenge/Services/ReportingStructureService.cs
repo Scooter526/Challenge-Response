@@ -8,36 +8,47 @@ using challenge.Repositories;
 
 namespace challenge.Services
 {
-    public class ReportingStructureService : IReportingStructureService 
-
-  
+    public class ReportingStructureService : IReportingStructureService
     {
-        private readonly IReportingStructureService _reportingStructureRepository;
+        private readonly IEmployeeRepository _employeeRepository;
         private readonly ILogger<ReportingStructureService> _logger;
 
-        private readonly IEmployeeRepository _employeeRepository;
-        
-
-        public ReportingStructureService(ILogger<ReportingStructureService> logger, IReportingStructureRepository reportingStructureRepository)
+        public ReportingStructureService(ILogger<ReportingStructureService> logger, IEmployeeRepository employeeRepository)
         {
-            _reportingStructureRepository = reportingStructureRepository;
+            _employeeRepository = employeeRepository;
             _logger = logger;
         }
 
-        /*public Employee GetById(string id)
+        public ReportingStructure GetById(string id)
         {
             if(!String.IsNullOrEmpty(id))
             {
-                return _employeeRepository.GetById(id);
+                ReportingStructure reportingStructure = new ReportingStructure();
+                reportingStructure.employee = _employeeRepository.GetById(id);
+
+                // Calculate the number of direct reports
+                reportingStructure.numberOfReports = FindNumberOfReports(reportingStructure.employee);
+
+                return reportingStructure;
             }
 
             return null;
-        }*/
-
-            public Employee GetById(string id)        {
-                            {
-            return _employeeContext.Employees.SingleOrDefault(e => e.EmployeeId == id);
         }
+
+        public int FindNumberOfReports(Employee employee)
+        {
+           
+            int count = 0;
+
+            if(employee != null && employee.DirectReports != null)
+            {
+                foreach(Employee report in employee.DirectReports)
+                {
+                    count += FindNumberOfReports(report);
+                }
+            }
+
+            return count;
         }
     }
 }
